@@ -15,7 +15,7 @@ class Home extends Component {
           <div className="account-box">
             <div className="login-right">
               <div className="login-header">
-                <h3><span>Mentoring</span> Register</h3>
+                <h3><span>REGISTER</span> MOTOR SPORTS RACING EVENTS</h3>
                 <p className="text-muted">Access to our dashboard</p>
               </div>
               {/* Register Form */}

@@ -14,13 +14,13 @@ class Home extends Component {
             <div className="account-box">
               <div className="login-right">
                 <div className="login-header">
-                  <h3>Login <span>Mentoring</span></h3>
-                  <p className="text-muted">Access to our dashboard</p>
+                  <h3>Login to <span>Motor Sports Racing Events</span></h3>
+                  <p className="text-muted">Access track and event details</p>
                 </div>
                 <form action="/app/index">
                   <div className="form-group">
-                    <label className="form-control-label">Email Address</label>
-                    <input type="email" className="form-control" />
+                    <label className="form-control-label">Username</label>
+                    <input type="text" className="form-control" />
                   </div>
                   <div className="form-group">
                     <label className="form-control-label">Password</label>

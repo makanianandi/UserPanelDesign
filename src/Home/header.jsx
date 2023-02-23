@@ -42,7 +42,7 @@ class Header extends Component {
 					</span>
 				</a>
 				<Link to="/app/index" className="navbar-brand logo">
-					<img src={AppLogo} className="img-fluid" alt="Logo" />
+					<img src={AppLogo} className="img-logo" alt="Logo" />
 				</Link>
 				</div>
 				<div className="main-menu-wrapper">
@@ -58,7 +58,7 @@ class Header extends Component {
 					<li className={pathname.includes('index') ?"active" :""} >
 					<Link to="/app/index">Home</Link>
 					</li>
-					<li className={pathname.includes('/Mentor/dashboard') || pathname.includes('Mentor/bookings') ||pathname.includes('schedule-timings')
+					{/* <li className={pathname.includes('/Mentor/dashboard') || pathname.includes('Mentor/bookings') ||pathname.includes('schedule-timings')
 						 ||pathname.includes('/Mentor/chat')||pathname.includes('invoice')||pathname.includes('reviews')||pathname.includes('/Mentor/blog') 
 						 ||pathname.includes('/Mentor/profile-settings')||pathname.includes('mentor-register') ||
 						 pathname.includes('profile-mentee') ||pathname.includes('mentee-list') ||
@@ -86,8 +86,24 @@ class Header extends Component {
 						<li className={pathname.includes('reviews') ?"active" :""}><Link to="/app/Mentor/reviews">Reviews</Link></li>
 						<li className={pathname.includes('mentor-register') ?"active" :""}><Link to="/app/Mentor/mentor-register">Mentor Register</Link></li>
 					</ul>
-					</li>	
-					<li className={pathname.includes('mentor-profile') || pathname.includes('checkout') ||
+					</li>	 */}
+					<li className={pathname.includes('search') ?"active" :""} >
+					<Link to="/app/Mentee/search">Events</Link>
+					</li>
+					<li className={pathname.includes('blog') ?"active" :""} >
+					<Link to="/app/Blog/blog-list">Blogs</Link>
+					</li>
+					<li className={pathname.includes('aboutUS') ?"active" :""} >
+					<Link to="/app/Mentee/search">About US</Link>
+					</li>
+					<li className={pathname.includes('contactUS') ?"active" :""} >
+					<Link to="/app/Mentee/search">Contact US</Link>
+					</li>
+					<li className={pathname.includes('watchlist') ?"active" :""} >
+					<Link to="/app/Mentee/search">Watch List</Link>
+					</li>
+
+					{/* <li className={pathname.includes('mentor-profile') || pathname.includes('checkout') ||
 					pathname.includes('booking-success')|| pathname.includes('map-grid')|| pathname.includes('map-list')
 					 || pathname.includes('search') ||pathname.includes('bookings-mentee') || pathname.includes('dashboard-mentee') ||
 					 pathname.includes('favourites') || pathname.includes('Mentee/chat-mentee') || pathname.includes('profile-settings-mentee')||
@@ -113,8 +129,8 @@ class Header extends Component {
 						<li className={pathname.includes('profile-settings-mentee') ?"active" :""}><Link to="/app/Mentee/profile-settings-mentee">Profile Settings</Link></li>
 						<li className={pathname.includes('change-password') ?"active" :""}><Link to="/app/Mentee/change-password">Change Password</Link></li>
 					</ul>
-					</li>	
-					<li className={pathname.includes('voice-call') || pathname.includes('video-call') ||
+					</li>	 */}
+					{/* <li className={pathname.includes('voice-call') || pathname.includes('video-call') ||
 					pathname.includes('components') || pathname.includes('blank-page') ?"has-submenu active" :"has-submenu"}>
 					<a href="">Pages <i className="fas fa-chevron-down" /></a>
 					<ul className="submenu">
@@ -134,8 +150,8 @@ class Header extends Component {
 						<li><Link to="/register">Register</Link></li>
 						<li><Link to="/forgot-password">Forgot Password</Link></li>
 					</ul>
-					</li>
-					<li className={pathname.includes('blog-list') || pathname.includes('blog-grid') ||
+					</li> */}
+					{/* <li className={pathname.includes('blog-list') || pathname.includes('blog-grid') ||
 					pathname.includes('blog-details') ?"has-submenu active" :"has-submenu"}>
 					<a href="">Blog <i className="fas fa-chevron-down" /></a>
 					<ul className="submenu">
@@ -149,7 +165,7 @@ class Header extends Component {
 					</li>
 					<li className="login-link">
 					<Link to="/login">Login / Signup</Link>
-					</li>
+					</li> */}
 				</ul>		 
 				</div>		 
 				{location.pathname.includes("p/index") ? <ul className="nav header-navbar-rht">
@@ -162,7 +178,7 @@ class Header extends Component {
 				</ul> :
 				<ul className="nav header-navbar-rht">
 					{/* User Menu */}
-					<li className="nav-item dropdown has-arrow logged-item">
+					{<li className="nav-item dropdown has-arrow logged-item">
 					<a href="#" className="dropdown-toggle nav-link" data-toggle="dropdown">
 						<span className="user-img">
 						<img className="rounded-circle" src={USER} width={31} alt="Darren Elder" />
@@ -182,9 +198,9 @@ class Header extends Component {
 						<Link className="dropdown-item" to="/app/Mentor/profile-settings">Profile Settings</Link>
 						<Link className="dropdown-item" to="/login">Logout</Link>
 					</div>
-					</li>
-					{/* /User Menu */}
-				</ul> }
+					</li> }
+					
+			 </ul> } 
 			</nav>
 			</div>
 		</header>
